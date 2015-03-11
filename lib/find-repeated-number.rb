@@ -1,3 +1,7 @@
-def find_repeated_number(array)
+require 'pry'
 
-end
+  def find_repeated_number(array)
+    array.each do |num|
+      return num if array.count(num) > 1 
+    end
+  end
